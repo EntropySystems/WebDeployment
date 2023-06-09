@@ -18,7 +18,7 @@ jobs:
           git clone --depth=1 --branch=master https://devlaq:${{ secrets.API_TOKEN }}@github.com/EntropySystems/Web ./source
 
       - name: Run build
-        run:
+        run: |
           cd ./source
           npm install
           npm run build
